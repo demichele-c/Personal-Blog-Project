@@ -7,23 +7,31 @@
     <title>Blog Form</title>
 </head>
 <body>
+    <!-- added divs to organize page. -->
     <div class="top-line"></div>
     <div class="top-line"></div>
-    <div class="circle-box">My First Blog</div>
+    <div class="circle-box grainy-lines" id="myCircleBox">My First Blog</div>
     <div class="separator-line"></div>
     <div class="separator-line"></div>
-    <form id="blogForm">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
-    
-        <label for="author">Author:</label>
-        <input type="text" id="author" name="author" required>
-    
-        <label for="content">Content:</label>
-        <textarea id="content" name="content" required></textarea>
-    
-        <button type="submit">Submit</button>
-    </form>
-    
+    <!-- added contaier to hold imput boxes and imput boxes. -->
+    <div class="input-box-container">
+        <h2>What's on your mind?</h2>
+            <form id="blogForm">
+                <label for="title">Username</label>
+                <input type="text" id="title" name="title" required>
+            
+                <label for="author">Title</label>
+                <input type="text" id="author" name="author" required>
+            
+                <label for="content">Content</label>
+                <textarea id="content" name="content" required></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+        
+    </div>
+    <script src="assets/js/form.js"></script>
+</body>
+</html>
 </body>
 </html>
