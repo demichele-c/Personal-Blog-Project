@@ -41,10 +41,7 @@ function updateButtonContent() {
     modeToggle.textContent = currentMode === 'dark' ? '🌞' : '🌙';
 }
 // added light and dark mode functions.
-const submitButton = document.querySelector('button[type="submit"]');
 
-// Add the 'black-button' class to the submit button
-submitButton.classList.add('black-button');
 $(document).ready(function() {
     // Event listener for form submission
     $('#blogForm').submit(function(event) {
@@ -68,7 +65,7 @@ $(document).ready(function() {
         // Clear the form fields after storing the data
         $('#blogForm')[0].reset();
 
-        // Redirect to the display page or perform any other actions as needed
-        // window.location.href = 'display.html'; // Redirect to the display page
+        // Redirect to the blog.html page
+        window.location.href = 'blog.html'; // Redirect to the blog.html page
     });
 });
