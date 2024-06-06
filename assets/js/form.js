@@ -45,3 +45,30 @@ const submitButton = document.querySelector('button[type="submit"]');
 
 // Add the 'black-button' class to the submit button
 submitButton.classList.add('black-button');
+$(document).ready(function() {
+    // Event listener for form submission
+    $('#blogForm').submit(function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get the values from the input fields
+        var username = $('#title').val();
+        var title = $('#author').val();
+        var content = $('#content').val();
+
+        // Create an object to store the form data
+        var formData = {
+            username: username,
+            title: title,
+            content: content
+        };
+
+        // Store the form data in local storage
+        localStorage.setItem('blogData', JSON.stringify(formData));
+
+        // Clear the form fields after storing the data
+        $('#blogForm')[0].reset();
+
+        // Redirect to the display page or perform any other actions as needed
+        // window.location.href = 'display.html'; // Redirect to the display page
+    });
+});
