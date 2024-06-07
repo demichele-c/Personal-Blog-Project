@@ -46,26 +46,34 @@ $(document).ready(function() {
     // Event listener for form submission
     $('#blogForm').submit(function(event) {
         event.preventDefault(); // Prevent the default form submission
-
-        // Get the values from the input fields
-        var username = $('#title').val();
-        var title = $('#author').val();
-        var content = $('#content').val();
-
-        // Create an object to store the form data
-        var formData = {
-            username: username,
-            title: title,
-            content: content
-        };
-
-        // Store the form data in local storage
-        localStorage.setItem('blogData', JSON.stringify(formData));
-
-        // Clear the form fields after storing the data
-        $('#blogForm')[0].reset();
-
-        // Redirect to the blog.html page
-        window.location.href = 'blog.html'; // Redirect to the blog.html page
-    });
-});
+        
+        
+                // Get the input values
+                var username = $('#title').val();
+                var title = $('#author').val();
+                var content = $('#content').val();
+        
+                // Create a new object with the input values
+                var newData = {
+                    username: username,
+                    title: title,
+                    content: content
+                };
+                console.log(newData);
+                // Retrieve existing data from local storage or initialize an empty array
+                var savedData = JSON.parse(localStorage.getItem('savedData')) || [];
+        
+                // Add the new data object to the array
+                savedData.push(newData);
+        
+                // Save the updated array back to local storage
+                localStorage.setItem('savedData', JSON.stringify(savedData));
+        
+                // Clear the form fields
+                $('#title').val('');
+                $('#author').val('');
+                $('#content').val('');
+                window.location.href = 'blog.html'; // Redirect to the blog.html page
+            });
+        });
+        

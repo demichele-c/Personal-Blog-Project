@@ -1,19 +1,10 @@
 $(document).ready(function() {
-    // Retrieve the stored data from local storage
-    var storedData = localStorage.getItem('blogData');
-    
-    if (storedData) {
-        var formData = JSON.parse(storedData);
+    // Retrieve the saved data from local storage
+    var savedData = JSON.parse(localStorage.getItem('savedData')) || [];
 
-        // Display the data in text boxes
-        var dataDisplay = $('#dataDisplay');
-        $.each(formData, function(key, value) {
-            dataDisplay.append(`
-                <div>
-                    <label>${key}</label>
-                    <input type="text" value="${value}" readonly>
-                </div>
-            `);
-        });
-    }
+    // Loop through the saved data and display it in the order it was saved
+    savedData.forEach(function(data) {
+        var listItem = $('<li>').text(data.username + ' - ' + data.title + ' - ' + data.content);
+        $('#dataList').append(listItem);
+    });
 });
