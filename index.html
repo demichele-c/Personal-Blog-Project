@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/form.css">
+ 
     <title>Blog Form</title>
 </head>
 
@@ -19,15 +23,15 @@
     <div class="separator-line"></div>
     <!-- added contaier to hold imput boxes and imput boxes. -->
     <div class="input-box-container">
-        <h2>What's on your mind?</h2>
+        <h2 >What's on your mind?</h2>
             <form id="blogForm">
-                <label for="title">Username</label>
+                <label class="un" for="title">Username</label>
                 <input type="text" id="title" name="title" required>
             
-                <label for="author">Title</label>
+                <label class="au" for="author">Title</label>
                 <input type="text" id="author" name="author" required>
             
-                <label for="content">Content</label>
+                <label class="con" for="content">Content</label>
                 <textarea id="content" name="content" required></textarea>
             <div class="button-space-bottom"></div>
                 <button class="black-button" type="submit">Submit</button>
