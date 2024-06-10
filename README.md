@@ -16,7 +16,7 @@ THEN I created a footer with a link to my portfolio.
 
 ```
 ## Deployed Website Screenshot
-![Deployed Website](Assets/Website-test.mp4)
+![Deployed Website](assets/Website-test.mp4)
 
 ## Project URL
 
