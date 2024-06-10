@@ -6,7 +6,7 @@
 /* added container for imput boxes to layout page properly. */
 .input-box-container {
     height: 500px;
-    width: 63%;
+    width: 58%;
     padding-top: 30px;
     padding-left: 30px;
     border-left: 20px double black;
@@ -27,8 +27,8 @@
 }
 /* added margins around main elements. */
 .circle-box {
-    width: 325px;
-    height: 325px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     background-color: #f0f0f0;
     display: flex;

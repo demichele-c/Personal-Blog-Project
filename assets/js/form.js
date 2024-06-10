@@ -16,7 +16,7 @@ const circleBox = document.getElementById('myCircleBox');
 
 // Added font style to circle-box.
 circleBox.style.color = 'white';
-circleBox.style.fontSize = '50px';
+circleBox.style.fontSize = '65px';
 circleBox.style.fontFamily = 'DM Serif Display, serif'; 
 circleBox.style.textShadow = '2px 2px 10px rgba(0, 0, 0, 0.5)';
 
