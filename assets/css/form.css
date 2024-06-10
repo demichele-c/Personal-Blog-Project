@@ -7,8 +7,8 @@
 .input-box-container {
     height: 500px;
     width: 58%;
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 50px;
+    padding-left: 100px;
     border-left: 20px double black;
     box-sizing: border-box;
 }
@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    margin: 20px;
+    margin: 60px;
 
 }
 /* created a round text box. */
