@@ -1,0 +1,44 @@
+/* variable background color and custom font for both html. */
+:root {
+    --background-color: #000000; 
+    --font-family: "DM Serif Display", serif;
+}
+/* hover color for link. */
+a:hover {
+    color: red;
+    
+}
+/* style for top lines. */
+header {
+    display: flex;
+    border-bottom: 20px double black;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/* style for body. */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+/* style for light dark mode button. */
+#mode-toggle {
+    z-index: 999; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* color when hovered over any button. */
+button:hover {
+    background-color: #919496;
+}
+/* style for link. */
+a {
+    color: rgb(89, 89, 94); 
+    text-decoration: none; 
+    font-weight: bold;
+}

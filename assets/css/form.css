@@ -1,40 +1,42 @@
+/* added a root background color and font. */
 :root {
     --background-color: #000000; 
     --font-family: "DM Serif Display", serif;
 }
-/* added a root background color. */
-.input-box-container {
-    margin: 20px;
-    float: right; 
-    height: 500px;
-    width: 48%; 
-    padding-top: 30px;
-    padding-left: 20px;
-}
 /* added container for imput boxes to layout page properly. */
+.input-box-container {
+    height: 500px;
+    width: 63%;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-left: 20px double black;
+    box-sizing: border-box;
+}
+/* added margin to imput box. */
 .input-box {
     margin: 20px;
 }
-
+/* added top line styling. */
 .top-line {
     border-bottom: 5px solid #000000;
     padding-bottom: 5px;
 }
-/* added top line styling. */
+/* added float to all elements. */
 .circle-box, .separator-line, #blogForm, .input-box-container {
-    margin: 40px;
     float: left; 
 }
 /* added margins around main elements. */
 .circle-box {
-    width: 425px;
-    height: 425px;
+    width: 325px;
+    height: 325px;
     border-radius: 50%;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    margin: 20px;
+
 }
 /* created a round text box. */
 
@@ -47,33 +49,29 @@
     padding-right: 5px;
     float: left;
 }
-
-.line-spacer {
-    width: 3px;
-    height: 550px; 
-    padding-right: 5px;
-    float: left
-}
+/* added margin to form. */
 #blogForm {
  margin: 0;
 }
-
+/* added width and margin to imput. */
 #blogForm input {
     margin-bottom: 10px; 
     width: 99%;
     
 }
+/* added style to content box. */
 #content {
     width: 98%;
     height: 100px;
+    border-radius: 4px;
 }
-/* styling for circle box to have a gradient from gray to orange and faint lines throughout. */
+/* styling for circle box to have a gradient from gray to orange */
 .grainy-lines {
     position: relative;
     background: linear-gradient(to bottom, orange, gray);
 }
-
-
+/* 
+style for lines in circle. */
 .grainy-lines::before {
     content: '';
     position: absolute;
@@ -84,32 +82,18 @@
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 10px, transparent 10px); border-radius: 50%;
     background-size: 100% 20px; 
 }
-
+/* light mode color */
 body {
-    background-color: #f0f0f0; /* Light mode background color */
-    color: #333; /* Light mode text color */
+    background-color: #f0f0f0; 
+    color: #333; 
 }
-
+/* dark mode color */
 .dark-mode {
-    background-color: #333; /* Dark mode background color */
-    color: #f0f0f0; /* Dark mode text color */
+    background-color: #333;
+    color: #f0f0f0; 
 }
-#mode-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 999; /* Ensure the button is on top of other elements */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#mode-toggle:hover {
-    background-color: #919496;
-}
-.button-space-top {
-    padding-bottom: 35px;
-}
+/* 
+style for submit button. */
 .black-button {
     background-color: black;
     color: white;
@@ -121,9 +105,23 @@ body {
     border: none;
     cursor: pointer;
 }
+/* space between content and submit button. */
 .button-space-bottom {
     padding-bottom:10px;
 }
+/* font for all imput boxes. */
 .un, .au, .con {
     font-family: var(--font-family);;
+}
+
+/* align footer text. */
+
+footer {
+    text-align: center;
+    font-family: var(--font-family);;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
 }
