@@ -15,8 +15,8 @@ header {
     justify-content: space-between;
     padding-bottom: 5px;
     align-items: center;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right:10px;
+    margin-left: 10px;
 }
 /* style for body. */
 body {
