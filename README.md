@@ -17,8 +17,8 @@ THEN I created a footer with a link to my portfolio.
 ```
 ## Deployed Website Screenshot
 
-![Deployed Website](assets/main-blog-light.png)
-![Deployed Website](assets/main-blog-dark.png)
+![Deployed Website](assets/main-light.png)
+![Deployed Website](assets/main-dark.png)
 ![Deployed Website](assets/blog-posting-page.png)
 
 
